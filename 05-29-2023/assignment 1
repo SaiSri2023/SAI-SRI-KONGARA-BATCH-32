@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SAI SRI KONGARA</title>
+<style>
+body {
+  font-family: Times new roman;
+  background-color: silver;
+}
+
+h1 {
+color: white;
+background-color: blue;
+text-align:center;
+padding: 10px;
+border: 2px;
+radius:5px;
+font-size:25px
+}
+h2{
+text-align:center;
+color: green;
+border:2px;
+radius:5px;
+font-size:16px;
+}
+p {
+text-align:center;
+color: green;
+}
+</style>
+
+</head>
+<body>
+
+  <h1>SELF INTRODUCTION</h1>
+  <h2>First Name: Sai Sri</h2>
+  <h2>Last Name: Kongara</h2>
+  <div>
+  	<h2>Experience</h2>
+  	<p>I have worked as System Engineer in Tata Consultancy Services using the webMethods Integration Tool for 1.4 years.
+ 	<br> I also have worked as Graduate Teaching Assistant in University of North Texas pursuing masters.</br></p>
+  </div>
+  <div>
+ 	 <h2>Masters</h2>
+  	<p> I have done my masters in University Of North Texas in the field of Computer Science.
+  	</p>
+  </div>
+  <div>
+  <h2>Undergraduation</h2>
+  <p> I have done Undergraduation from Vasireddy Venkatadri Institute Of Technology, India in the field of Computer Science.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head></head>
+    <body>
+        <h1> Sending Amount</h1>
+        <p>See console for the answer.!!</p>
+    </body>
+    <script>
+        var envment= prompt("enter any any environment(dev,stage,test,prod)");
+        var amt=parseFloat(prompt("Enter the amount"));
+        var sendamt;
+        if(envment=="dev"){
+            sendamt= amt+(amt*0.1);
+        }
+        else if(envment=="test")
+        {
+            sendamt=amt+(amt*0.2);
+        }
+        else if(envment=="stage"){
+            sendamt=amt+(amt*0.3);
+
+        }
+        else if(envment=="prod")
+        {
+            sendamt=amt+(amt*0.05);
+        }
+        else
+                sendamt=0;
+        console.log("The sending amount is "  +sendamt);
+       
+    </script>
+</html>

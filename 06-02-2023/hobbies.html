@@ -1,0 +1,30 @@
+<html>
+    <head> </head>
+    <script>
+        var hobbies=["dancing","cooking","reading","gardening","playing"];
+        function hobbiesDisplay(){
+
+            console.log(hobbies);
+        }
+        function addHobbies(addhobby){
+                hobbies.push(addhobby);
+                console.log(addhobby)
+        }
+
+        
+        function removehobbies(removehobby) {
+            for (let i = 0; i < hobbies.length; i++) {
+                if (hobbies[i] === removehobby) {
+                    hobbies.splice(i, 1);
+                     console.log(removehobby);
+        }
+    }
+}
+hobbiesDisplay();
+addHobbies("drawing");
+hobbiesDisplay();
+removehobbies("cooking");
+hobbiesDisplay();
+
+    </script>
+</html>

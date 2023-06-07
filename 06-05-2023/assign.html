@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Profile</title>
+
+<script>
+          
+          function show() {
+                var fn = document.getElementById("firstname").value;
+                var ln = document.getElementById("lastname").value;
+                var dob = document.getElementById("dob").value; 
+                var email = document.getElementById("email").value;
+                var phno = document.getElementById("phone").value;
+                var gender = document.getElementById("gender").value;
+                var Bloodgrp = document.getElementById("Bloodgrp").value;
+                document.getElementById("info").innerHTML="<h2>Your details:</h2><br>"+
+                    
+                    "<table>"+
+                    "<tr><td> First Name </td><td> : " + fn + "</td></tr>" +
+                    "<tr><td> Last Name </td><td> : " + ln + "</td></tr>" +
+                    "<tr><td> Date of Birth </td><td> : " + dob + "</td></tr>" +
+                    "<tr><td> Email </td><td> : " + email + "</td></tr>" +
+                    "<tr><td> Phone </td><td> : " + phno + "</td></tr>" +
+                    "<tr><td> Gender </td><td> : " + gender + "</td></tr>" +
+                    "<tr><td> Blood group </td><td> : " + Bloodgrp + "</td></tr>";+
+                    "</table>"
+            }
+            
+</script>
+
+</head>    
+<body>
+   <table>
+                <tr><td>First Name: <input type="text" id="firstname"/></td></tr>
+                   <tr><td>Last Name:  <input type="text" id="lastname"/></td></tr>
+                    <tr><td>Date of Birth: <input type="date" id="dob"/></td>
+                <tr><td>Email: <input type="text" id="email"/></td></tr>
+                <tr><td>Phone: <input type="text" id="phone" maxlength="10"/></td></tr>
+                <td>Gender: <input type="text" id="gender"/></td></tr>
+            <tr><td>Blood group: <input type="text" id="Bloodgrp"/></td></tr>
+            <tr><td><button id="submit" onclick="show()">Submit</button></td></tr>
+        </table>
+    <div>
+        <p id="info"></p>
+    </div>
+</body>
+</html>

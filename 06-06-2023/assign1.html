@@ -4,7 +4,8 @@
 
 <script>
           
-          function show() {
+          function show(event) {
+                event.preventDefault();
                 var fn = document.getElementById("firstname").value;
                 var ln = document.getElementById("lastname").value;
                 var dob = document.getElementById("dob").value; 
@@ -16,7 +17,7 @@
 
                function hobbiesDisply(){
                 var hobbies = [];
-                var checkboxes=document.getElementById("hobbies");
+                var checkboxes=document.getElementsByName("hobbies");
             for (var i = 0; i < checkboxes.length; i++) {
             if (checkboxes[i].checked == true) {
                 hobbies.push(checkboxes[i].value);
@@ -35,8 +36,6 @@
                     "<tr><td> Gender </td><td> : " + gender + "</td></tr>" +
                     "<tr><td> Blood group </td><td> : " + Bloodgrp + "</td></tr>"+
                     "<tr><td> Hobbies </td><td> : " + hobbies + "</td></tr>";
-
-                    
                     "</table>"
             }
     
@@ -59,11 +58,9 @@
                 <td><input type="checkbox" name="hobbies" value="Thinking">Thinking</td>
                 <tr><td>Blood group: <input type="text" id="Bloodgrp"/></td></tr>
                
-            </form>   
-            <tr><td><button id="submit" onclick="show()">Submit</button></td></tr>
-        </table>
-    <div>
+            </table>
+            <tr><td><button id="submit" onclick="show(event)">Submit</button></td></tr> 
+    </form>
         <p id="info"></p>
-    </div>
 </body>
 </html>

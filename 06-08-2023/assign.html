@@ -1,0 +1,21 @@
+<html>
+    <script>
+        Object.prototype.customSort=function(){
+            var min2;
+            var x=[120,190,67,-89,56,0,1]
+            var min = x[0];
+            for (var i= 0; i< x.length; i++) {
+                if (x[i]< min) {
+                    min2 = min;
+                    min = x[i]; 
+                } else if (x[i]< min2) {
+                    min2 = x[i]; 
+                }
+            }
+            
+            console.log(min2)
+        }
+       
+        customSort();
+    </script>
+</html>

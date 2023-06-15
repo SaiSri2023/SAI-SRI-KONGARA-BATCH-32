@@ -1,0 +1,22 @@
+.topnav {
+    overflow: hidden;
+    background-color:rgba(108, 108, 201, 0.863);
+    padding:10px;
+    color: white;
+  }
+
+  
+  .topnav ul{
+    float:right;
+    list-style-type: none;
+  
+    padding: 14px 16px;
+  }
+  .topnav li{
+    display:inline-block;
+    padding: 14px 16px;
+  }
+  
+  .topnav .search-bar{
+    padding: 14px;
+  }
